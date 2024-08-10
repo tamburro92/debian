@@ -1,6 +1,7 @@
 #Post install script for debian 12 bookworm (gnome)
 
-#Enable Non Free repository
+#Enable Contrib, Non Free repository
+sudo apt-add-repository contrib
 sudo apt-add-repository non-free
 sudo apt-add-repository non-free-firmware
 
