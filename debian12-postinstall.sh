@@ -32,7 +32,7 @@ sudo apt purge --autoremove gnome-games xiterm+thai
 sudo apt install gnome-shell-extension-desktop-icons-ng gnome-shell-extension-dashtodock -y
 
 #Update Grub with quiet splash
-sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/' /etc/default/grub
+sudo sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/' /etc/default/grub
 sudo grub-update
 
 #Enable Touch in Firefox
