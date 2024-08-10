@@ -7,7 +7,7 @@ sudo apt-add-repository non-free-firmware
 #Add Backport repository
 sudo add-apt-repository "deb http://deb.debian.org/debian $(lsb_release -cs)-backports main contrib non-free non-free-firmware"
 
-sudo apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 
 #Install Codecs, Microsoft Fonts and rar support (Ubuntu restricted-extras)
 sudo apt install libavcodec-extra ttf-mscorefonts-installer rar unrar gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y
