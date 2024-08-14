@@ -30,11 +30,14 @@ sudo apt purge --autoremove gnome-games xiterm+thai
  
 #Install Gnome Extensions
 sudo apt install gnome-shell-extension-desktop-icons-ng gnome-shell-extension-dashtodock -y
+#reboot gnome sessione before enable the extensions
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
+gnome-extensions enable ding@rastersoft.com
+
 
 #Update Grub with quiet splash
 sudo sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/' /etc/default/grub
 sudo grub-update
 
-#Enable Touch in Firefox
-#echo "export MOZ_ENABLE_WAYLAND=1" >> ~/.profile
-
+#Enable Wayland and Touch in Firefox
+echo 'export MOZ_ENABLE_WAYLAND=1' | sudo tee /etc/profile.d/firefox-wayland.sh
