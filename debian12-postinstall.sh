@@ -1,12 +1,12 @@
 #Post install script for debian 12 bookworm (gnome)
 
 #Enable Contrib, Non Free repository
-sudo apt-add-repository contrib
-sudo apt-add-repository non-free
-sudo apt-add-repository non-free-firmware
+sudo apt-add-repository contrib -y
+sudo apt-add-repository non-free -y
+sudo apt-add-repository non-free-firmware -y
 
 #Add Backport repository
-sudo add-apt-repository "deb http://deb.debian.org/debian $(lsb_release -cs)-backports main contrib non-free non-free-firmware"
+sudo add-apt-repository "deb http://deb.debian.org/debian $(lsb_release -cs)-backports main contrib non-free non-free-firmware" -y
 
 sudo apt update && sudo apt upgrade -y
 
