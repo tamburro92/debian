@@ -38,7 +38,7 @@ gsettings set org.gnome.shell enabled-extensions "['ding@rastersoft.com', 'dash-
 
 #Update Grub with quiet splash
 sudo sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/' /etc/default/grub
-sudo grub-update
+sudo update-grub
 
 #Enable Wayland and Touch in Firefox
 echo 'export MOZ_ENABLE_WAYLAND=1' | sudo tee /etc/profile.d/firefox-wayland.sh
