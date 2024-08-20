@@ -29,7 +29,7 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 sudo apt purge --autoremove gnome-games xiterm+thai
  
 #Install Gnome Extensions
-sudo apt install gnome-shell-extension-desktop-icons-ng gnome-shell-extension-dashtodock -y
+sudo apt install gnome-shell-extension-desktop-icons-ng gnome-shell-extension-dashtodock gnome-shell-extension-dash-to-panel gnome-shell-extension-arc-menu -y
 gsettings set org.gnome.shell enabled-extensions "['ding@rastersoft.com', 'dash-to-dock@micxgx.gmail.com']"
 #reboot gnome sessione before enable the extensions
 #gnome-extensions enable dash-to-dock@micxgx.gmail.com
